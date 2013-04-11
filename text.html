@@ -1,0 +1,32 @@
+<html>
+<body>
+
+	<div id ="stuff"></div>
+	<input name ="nowhere" id="nowhere" type="button" onclick="foo();">
+	<a id= "nowhere" onclick = "foo();" href = "javascript::void(0)" title="Click me">
+
+	<script Language = Javascript>
+	
+		var x;
+		
+		function foo()
+		{
+			var something = document.getElementById("stuff"); //Finding the div
+			console.log("Hello");
+			
+			if (something.innerHTML == "<h3> Hello </h3>")
+			{
+				something.innerHTML = "<h3> Bye </h3>";
+			}
+			else
+			{
+				something.innerHTML = "<h3> Hello </h3>";
+			}
+			
+		}
+	
+	</script>
+
+
+</body>
+</html>
